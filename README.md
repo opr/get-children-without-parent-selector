@@ -28,11 +28,9 @@ Type `yarn add get-children-without-parent-selector` at the command line to add 
 ```javascript
 import getChildrenWithoutParentSelector from 'get-children-without-parent-selector';
 
-// should return #beta, #epsilon and #zeta only
-// but returns #beta, #delta, #epsilon and #zeta
+// returns #beta, #epsilon and #zeta only
 getChildrenWithoutParentSelector(foo1, '.foo_bar', '.foo');
 
-// should return #delta only
-// works as expeted
+// returns #delta only
 getChildrenWithoutParentSelector(foo2, '.foo_bar', '.foo');
 ```
