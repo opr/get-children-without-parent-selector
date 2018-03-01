@@ -28,6 +28,9 @@ Type `yarn add get-children-without-parent-selector` at the command line to add 
 ```javascript
 import getChildrenWithoutParentSelector from 'get-children-without-parent-selector';
 
+const foo1 = document.getElementById('alpha');
+const foo2 = document.getElementById('gamma');
+
 // returns #beta, #epsilon and #zeta only
 getChildrenWithoutParentSelector(foo1, '.foo_bar', '.foo');
 
