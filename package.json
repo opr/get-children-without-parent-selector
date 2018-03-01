@@ -1,6 +1,6 @@
 {
   "name": "get-children-without-parent-selector",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "A function that takes an element and returns all descendants of that element, but does not return those whose parent element has the supplied selector.",
   "main": "./lib/index.js",
   "scripts": {
