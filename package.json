@@ -1,0 +1,33 @@
+{
+  "name": "get-children-without-parent-selector",
+  "version": "0.1.9",
+  "description": "A function that takes an element and returns all descendants of that element, but does not return those whose parent element has the supplied selector.",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "mocha --require babel-core/register --recursive --reporter spec",
+    "build": "node_modules/.bin/babel src --out-dir lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opr/get-children-without-parent-selector"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "author": "Thomas Roberts",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/opr/get-children-without-parent-selector"
+  },
+  "homepage": "https://github.com/opr/get-children-without-parent-selector",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "chai": "^4.1.2",
+    "jsdom": "^11.6.2",
+    "mocha": "^5.0.1"
+  }
+}

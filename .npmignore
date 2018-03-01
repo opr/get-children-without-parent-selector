@@ -1,0 +1,9 @@
+.gitignore
+.npmignore
+yarn.lock
+test
+.idea
+.travis.yml
+src
+*.tgz
+!lib
