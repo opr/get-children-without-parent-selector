@@ -1,13 +1,13 @@
 export default function getChildrenWithoutParentSelector(parent, selector, exclusionSelector = null) {
     let foundElements = [];
-    for(const c of parent.children) {
-        if(null !== exclusionSelector && c.matches(exclusionSelector)) {
+    for(const child of parent.children) {
+        if(null !== exclusionSelector && child.matches(exclusionSelector)) {
             continue;
         }
-        if(c.matches(selector)) {
-            foundElements.push(c);
+        if(child.matches(selector)) {
+            foundElements.push(child);
         }
-        foundElements.push(...getChildrenWithoutParentSelector(c, selector, exclusionSelector));
+        foundElements.push(...getChildrenWithoutParentSelector(child, selector, exclusionSelector));
     }
     return foundElements;
 }
