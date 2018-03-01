@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/opr/get-children-without-parent-selector.svg?branch=master)](https://travis-ci.org/opr/get-children-without-parent-selector)
+
 # Installation
 Type `yarn add get-children-without-parent-selector` at the command line to add this to your project.
 
